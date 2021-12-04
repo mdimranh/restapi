@@ -14,7 +14,6 @@ def firstAPI(request):
     if request.method=="POST":
         name = request.data['name']
         age = request.data['age']
-        print(name, age)
         return Response({'name': name, 'age': age})
     context={
         'name': 'Imran Hossain',
